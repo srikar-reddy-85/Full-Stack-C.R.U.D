@@ -1,0 +1,868 @@
+/* Navbar Styling */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Comfortaa:wght@300&family=Poppins:wght@300&family=Ubuntu:wght@500&display=swap');
+
+.navbar-container {
+  background: linear-gradient(to right, white, #1565c0);
+  /* background-color: #1565c0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.navbar-brand span {
+  position: relative;
+  left: 10px;
+  right: 10px;
+  bottom: 12px;
+  font-family: Poppins;
+  color: #404595;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.logo {
+  position: relative;
+  top: 8px;
+  width: 60px;
+  /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px;
+  /* Add spacing between the logo and text */
+}
+
+.navbar-links {
+  font-family: comfortaa;
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-right: 20px;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #90caf9;
+}
+
+/* Page Styling */
+.page-container {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #e3f2fd;
+  margin-top: 20px;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+/* process_master css  && product_master ------------------------------------------------------*/
+
+.create-button {
+  border-radius: 6px;
+  background-color: #1565c0;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0px;
+}
+
+.create-button:hover {
+  background-color: #0d47a1;
+  /* Darker color on hover */
+}
+
+.page-container {
+
+  padding: 20px;
+}
+
+.page-title {
+  font-family: Ubuntu;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.process-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.process-table th,
+.process-table td {
+  font-family: Ubuntu;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.process-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.view-button {
+  border-radius: 6px;
+  background-color: #4caf50;
+  /* Green */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button {
+  border-radius: 6px;
+  background-color: #f44336;
+  /* Red */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-button {
+  border-radius: 6px;
+  background-color: #1565c0;
+  /* Blue */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover,
+.delete-button:hover,
+.update-button:hover {
+  background-color: #555;
+  /* Darken on hover */
+}
+
+.icon {
+  font-size: 1.5rem;
+  /* Adjust icon size */
+  color: #4caf50;
+  /* Green color for icons */
+}
+
+.icon:hover {
+  color: #555;
+  /* Darker color on hover */
+}
+
+/* view button --------------------------------------------------------- */
+
+.view-process {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* Ensure the overlay appears on top */
+
+  /* Background blur effect */
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.pdata {
+  position: relative;
+  bottom: 18px;
+  padding-top: 0px;
+  font-family: Ubuntu;
+}
+
+.pid {
+  position: relative;
+  bottom: 18px;
+  padding-top: 0px;
+  font-family: comfortaa;
+
+}
+
+.pname {
+  position: relative;
+  bottom: 18px;
+  padding-top: 0px;
+  font-family: comfortaa;
+}
+
+.pdesc {
+  position: relative;
+  bottom: 18px;
+  padding-top: 0px;
+  font-family: comfortaa;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  background-color: #fff;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  margin: 5px 0;
+}
+
+.back-button {
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.back-button:hover {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* ProductProcess ------------------------------------------------------------ */
+
+/* is mandatory */
+
+.mandatory-button {
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mandatory-yes {
+  background-color: #28c242;
+  color: white;
+}
+
+.mandatory-no {
+  background-color: #c03432;
+  color: white;
+}
+
+.mandatory-button:hover {
+  opacity: 0.8;
+}
+
+/* search--------------------------------------------------------------- */
+/* ProcessMaster.css */
+/* Search bar and button styles */
+.search-container {
+  position: relative;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+
+}
+
+.search-button {
+  border-radius: 6px;
+  background-color: #1565c0;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0px;
+}
+
+.search-button:hover {
+  background-color: #0d47a1;
+}
+
+
+.search {
+  position: relative;
+  width: 150px;
+  height: 22px;
+  border-radius: 6px;
+  right: 2px;
+}
+
+/* update form----------------------------------------------- */
+
+
+
+.page-container {
+  position: relative;
+}
+
+.update-form-background {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 9999; */
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.update-form-container {
+  overflow: hidden;
+  align-items: center;
+  width: 60%;
+  max-width: 500px;
+  padding: 20px 30px 50px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  position: fixed;
+  top: 70%;
+  /* bottom: 100%; */
+  left: 50%;
+  transform: translate(-50%, -95%);
+  z-index: 11;
+
+}
+
+
+.update-form input[type="text"],
+.update-form textarea {
+  overflow: hidden;
+  position: relative;
+  right: 10.5px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+
+.update-form button {
+  overflow: hidden;
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.update-form button:hover {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.uprocess,
+.udesc {
+  overflow: hidden;
+  position: relative;
+  right: 8px;
+  font-family: comfortaa;
+  padding: 0px;
+
+}
+
+.uheader {
+  position: relative;
+  right: 8px;
+
+  font-family: Ubuntu;
+
+}
+
+.uupdate-button {
+  overflow: hidden;
+  position: relative;
+  top: 12px;
+  right: 8px;
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.uupdate-button:hover {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.ucancel-button {
+  position: relative;
+  top: 12px;
+  right: -4px;
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  color: #ff2424 !important;
+  border-color: #f81128 !important;
+
+}
+
+.ucancel-button:hover {
+
+  color: #fff !important;
+  background-color: #ff2424 !important;
+  border-color: #f81128 !important;
+
+}
+
+
+/* create -------------------------------------------------------------------------- */
+.create-form-background {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 9999; */
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.create-form-container {
+  overflow: hidden;
+  align-items: center;
+  width: 60%;
+  max-width: 500px;
+  padding: 20px 5px 50px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  position: fixed;
+  top: 82%;
+  /* bottom: 100%; */
+  left: 50%;
+  transform: translate(-50%, -95%);
+  z-index: 11;
+}
+
+.create-form-backgroundpp {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 9999; */
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.create-form-containerpp {
+  overflow: hidden;
+  align-items: center;
+  width: 60%;
+  max-width: 500px;
+  padding: 20px 5px 50px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  position: fixed;
+  top: 85%;
+  /* bottom: 100%; */
+  left: 50%;
+  transform: translate(-50%, -95%);
+  z-index: 11;
+}
+
+.create-form-container1 {
+  position: relative;
+  right: 10px;
+  padding: 20px 10px 20px 20px;
+}
+
+.cheader {
+  /* font-family: Ubuntu !important;
+  padding: 0px; */
+  position: relative;
+  bottom: 15px;
+  right: 3px;
+  font-family: Ubuntu;
+}
+
+.cpid,
+.cpname,
+.cdesc {
+  position: relative;
+  top: 10px;
+  font-family: comfortaa;
+}
+
+.create-form input[type="text"],
+.create-form textarea {
+  position: relative;
+  top: 10px;
+  /* right: -40px; */
+  left: 0px;
+  width: 400px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.create-form input[id="ismandatory"],
+.create-form textarea {
+  position: relative;
+  top: 10px;
+  right: 112px;
+  width: 400px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+
+
+.inpid {
+  position: relative;
+  left: -87px;
+}
+
+.inpname {
+  position: relative;
+  left: -120px;
+}
+
+.create-form {
+  position: relative;
+  bottom: 10px;
+
+}
+
+.create1-button {
+  overflow: hidden;
+  position: relative;
+  top: 16px;
+  right: 0px;
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  color: #31c1ff;
+  border-color: #31c1ff;
+}
+
+.create1-button:hover {
+  color: #fff;
+  background-color: #31c1ff;
+  border-color: #31c1ff;
+
+}
+
+.create-form-button {
+  overflow: hidden;
+  position: relative;
+  top: 16px;
+  right: -15px;
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  color: #ee2525;
+  border-color: #f73232;
+
+}
+
+.create-form-button:hover {
+  color: #fff;
+  background-color: #ee2525;
+  border-color: #f73232;
+
+}
+
+/* HOME---------------------------------------------------------------- */
+
+.hhome {
+  position: relative;
+  top: 20px;
+  padding: 20px;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 3px;
+  border-color: rgb(102, 173, 254) !important;
+}
+
+.hpheader {
+  position: relative;
+  bottom: 15px;
+  padding: 10px;
+  left: -2px;
+  color: #2a78ed;
+  font-family: Poppins;
+}
+
+.hbprod {
+  overflow-wrap: normal;
+  position: relative;
+  top: 10px;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: rgb(102, 173, 254) !important;
+}
+
+.hbproc {
+  overflow-wrap: normal;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: rgb(102, 173, 254) !important;
+
+}
+
+.proccontent {
+  overflow-wrap: normal;
+  position: relative;
+  bottom: 38px;
+  left: 8px;
+  font-size: larger;
+  font-family: comfortaa;
+
+}
+
+/* home------------------------------------------------------------------------------------------------------ */
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  padding: 6px;
+}
+
+.himg1 {
+  border-radius: 9px;
+  height: 240px;
+  width: 340px;
+}
+
+.prod1name {
+  font-family: Ubuntu;
+}
+
+/* dialouge box----------------------------------------------------------------------------------- */
+
+/* CSS for the confirmation dialog */
+.confirmation-dialog {
+  height: 100px;
+  width: 400px;
+  border-radius: 6px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+}
+
+.confirmation-dialog p {
+  margin-bottom: 15px;
+}
+
+.dialogno {
+  overflow: hidden;
+  position: relative;
+  top: 5px;
+  right: 0px;
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  color: #ff3131;
+  border-color: #ff3131;
+
+}
+
+/* .dialogno:hover {
+  color: #fff;
+  color: #ff3131;
+  border-color: #ff3131;
+
+} */
+
+.dialogyes {
+  overflow: hidden;
+  position: relative;
+  top: 5px;
+  right: 0px;
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  color: #31c1ff;
+  border-color: #31c1ff;
+
+}
+
+/* .dialogyes:hover {
+  color: #fff;
+  background-color: #31c1ff;
+  border-color: #31c1ff;
+
+} */
+
+.confirmation-dialog button {
+  position: relative;
+  margin: 0 10px;
+  padding: 5px 15px;
+  cursor: pointer;
+  /* background-color: #007bff; */
+  /* color: #fff; */
+  /* border: none; */
+  border-radius: 4px;
+}
+
+/* .confirmation-dialog button:hover {
+  background-color: #0056b3;
+} */
+
+/* Add a backdrop to overlay the rest of the page */
+.confirmation-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.confirmmsg {
+  font-size: larger;
+  font-family: Comfortaa;
+}
