@@ -24,12 +24,12 @@ This is a simple web application built for managing different products and proce
 
    ```bash
    git clone https://github.com/yourusername/your-repo.git
-  -- Navigate to the project directory:
-    cd your-repo
-  -- Install the project dependencies:  
-    npm install
-  -- Start the React development server:
-    npm start
+     -- Navigate to the project directory:
+       cd your-repo
+     -- Install the project dependencies:  
+       npm install
+     -- Start the React development server:
+       npm start
 
     Open your web browser and access the application at http://localhost:3000.
 
