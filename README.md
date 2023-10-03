@@ -6,6 +6,8 @@ This is a simple web application built for managing different products and proce
 
 ## Features
 
+https://github.com/tonystark-85/Full-Stack-C.R.U.D/assets/100996508/428bfc90-7f06-45d9-bb85-5708c113712d
+
 - **Create**: Add new products and processes to the system.
 - **Read**: View a list of existing products and processes.
 - **Update**: Modify product and process information as needed.
